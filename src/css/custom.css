@@ -1,16 +1,42 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
+/* Estilo Tema principal */
 :root {
-  --ifm-color-primary: #008080; /* cambia el color principal */
-  --ifm-font-family-base: 'Segoe UI', sans-serif;
+  --ifm-color-primary: #3b49df; /* Azul similar */
+  --ifm-font-family-base: "Inter", sans-serif; /* Fuente*/
 }
 
+/* Sidebar estilo GitBook */
+.menu {
+  padding: 1rem;
+  border-right: 1px solid #e5e7eb;
+}
+
+.menu__link {
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin: 4px 0;
+}
+
+.menu__link:hover {
+  background: #f3f4f6;
+}
+
+/* Contenido principal */
+.markdown {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+/* Header estilo GitBook */
 .navbar {
-  box-shadow: none;
-  background: #f5f5f5;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Bloques de código */
+.prism-code {
+  border-radius: 8px;
+  padding: 1.25rem !important;
+  background: #f9fafb !important;
+  border: 1px solid #e5e7eb !important;
 }
