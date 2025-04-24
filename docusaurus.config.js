@@ -10,7 +10,7 @@ const config = {
   favicon: 'img/facturacion.png',
 
   url: 'https://paulguerracod.github.io',
-  baseUrl: '/docusaurus/',
+  baseUrl: '/casodocusaurus/',
 
   organizationName: 'paulguerracod',
   projectName: 'casodocusaurus',
