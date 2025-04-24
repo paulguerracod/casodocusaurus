@@ -31,8 +31,9 @@ const config = {
           editUrl: 'https://github.com/paulguerracod/casodocusaurus/tree/main/',
           showLastUpdateTime: true,
           breadcrumbs: true,
+          routeBasePath: '/',
         },
-        blog: false, // Deshabilitar blog
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -46,6 +47,7 @@ const config = {
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
       image: 'img/social-card.jpg',
       navbar: {
@@ -53,7 +55,8 @@ const config = {
         logo: {
           alt: 'Facturalo Logo',
           src: 'img/logo.svg',
-          width: 120,
+          width: 160,
+          height: 32,
         },
         items: [
           {
@@ -63,23 +66,28 @@ const config = {
             label: 'Documentación',
           },
           {
-            type: 'docsVersionDropdown',
-            position: 'right',
-          },
-          {
             type: 'search',
             position: 'right',
           },
         ],
+        style: 'dark',
+        hideOnScroll: true,
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Facturalo. Built with Docusaurus.`,
+        copyright: `© ${new Date().getFullYear()} Facturalo. Todos los derechos reservados.`,
+        links: [],
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.github,
         additionalLanguages: ['json', 'bash'],
+      },
+      docs: {
+        sidebar: {
+          hideable: false,
+          autoCollapseCategories: true,
+        },
       },
     }),
 
@@ -87,12 +95,20 @@ const config = {
     [
       '@docusaurus/plugin-ideal-image',
       {
-        quality: 70,
+        quality: 90,
         max: 1030,
         min: 640,
         steps: 2,
+        disableInDev: false,
       },
     ],
+  ],
+  
+  stylesheets: [
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
+      type: 'text/css',
+    },
   ],
 };
 
