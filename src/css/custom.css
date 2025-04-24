@@ -1,44 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+/* Fuente principal - Debe ser la primera regla */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Estilo Tema principal */
 :root {
-  --ifm-color-primary: #3b49df; /* Azul similar */
-  --ifm-font-family-base: "Inter", sans-serif; /* Fuente*/
+  --ifm-color-primary: #3B49DF; /* Azul GitBook */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-weight: 600;
+  --ifm-line-height-base: 1.6;
+}
+
+/* Navbar estilo GitBook */
+.navbar {
+  border-bottom: 1px solid #eaecef;
+  box-shadow: none;
+  padding: 12px 0;
+}
+
+.navbar__logo {
+  margin-right: 2rem;
 }
 
 /* Sidebar estilo GitBook */
 .menu {
   padding: 1rem;
-  border-right: 1px solid #e5e7eb;
+  border-right: 1px solid #f0f0f0;
 }
 
 .menu__link {
   border-radius: 6px;
   padding: 8px 12px;
-  margin: 4px 0;
+  font-size: 14px;
+  transition: all 0.2s;
 }
 
 .menu__link:hover {
-  background: #f3f4f6;
+  background: #f5f6f8;
+  color: var(--ifm-color-primary);
 }
 
 /* Contenido principal */
 .markdown {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 2rem;
 }
 
-/* Header estilo GitBook */
-.navbar {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid #e5e7eb;
+/* Encabezados */
+h1 {
+  font-size: 2.2rem !important;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.7rem !important;
+  margin-top: 2.5rem !important;
 }
 
 /* Bloques de código */
 .prism-code {
-  border-radius: 8px;
+  border-radius: 8px !important;
   padding: 1.25rem !important;
-  background: #f9fafb !important;
-  border: 1px solid #e5e7eb !important;
+  background: #f8f9fa !important;
+  border: 1px solid #eaecef !important;
 }
