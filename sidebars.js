@@ -1,45 +1,31 @@
+// @ts-check
+
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   tutorialSidebar: [
     {
-      type: "category",
-      label: "🏠 Inicio",
-      collapsible: false,
-      items: ["intro"],
-      className: "sidebar-icon-home",
+      type: "doc",
+      id: "intro",
+      label: "🏠 Introducción",
     },
     {
       type: "category",
-      label: "📄 Documentación",
+      label: "📚 Tutorial Básico",
       items: [
-        {
-          type: "doc",
-          id: "facturacion/emitir-comprobante",
-          label: "📤 Emitir Comprobante",
-        },
-        {
-          type: "doc",
-          id: "facturacion/anular-comprobante",
-          label: "🗑️ Anular Comprobante",
-        },
+        "tutorial-basics/create-a-document",
+        "tutorial-basics/create-a-page",
+        "tutorial-basics/create-a-blog-post"
       ],
-      className: "sidebar-icon-docs",
     },
     {
       type: "category",
-      label: "⚙️ Configuración",
+      label: "⚙️ Configuración Avanzada",
       items: [
-        {
-          type: "doc",
-          id: "configuracion/api-keys",
-          label: "🔑 API Keys",
-        },
-        {
-          type: "doc",
-          id: "configuracion/integraciones",
-          label: "🔗 Integraciones",
-        },
+        "tutorial-extras/manage-docs-versions",
+        "tutorial-extras/translate-your-site"
       ],
-      className: "sidebar-icon-config",
     },
   ],
 };
+
+export default sidebars;
