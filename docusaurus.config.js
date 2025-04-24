@@ -9,13 +9,8 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/facturacion.png',
 
-  url: isGitHub 
-    ? 'https://paulguerracod.github.io'
-    : 'https://927361945.facturalo.co',
-  
-  baseUrl: isGitHub 
-    ? '/casodocusaurus/' 
-    : '/docusaurus/',
+  url: 'https://misitioweb.com',
+  baseUrl: '/docusaurus/',
 
   organizationName: 'paulguerracod',
   projectName: 'casodocusaurus',
