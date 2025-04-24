@@ -4,71 +4,32 @@
  * @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {
-  // Sidebar principal (estructura jerárquica como GitBook)
-  docsSidebar: [
-    {
-      type: "category",
-      label: "🚀 Introducción",
-      collapsible: true,
-      collapsed: false,
-      items: [
-        "introduccion/que-es",
-        "introduccion/comenzando",
-        "introduccion/primeros-pasos",
-      ],
-    },
-    {
-      type: "category",
-      label: "📚 Conceptos Básicos",
-      collapsible: true,
-      collapsed: false,
-      items: [
-        {
-          type: "category",
-          label: "Estructura de Contenido",
-          items: [
-            "conceptos-basicos/estructura/organizacion",
-            "conceptos-basicos/estructura/plantillas",
-            "conceptos-basicos/estructura/versionado",
-          ],
-        },
-        {
-          type: "category",
-          label: "Colaboración",
-          items: [
-            "conceptos-basicos/colaboracion/permisos",
-            "conceptos-basicos/colaboracion/revisiones",
-            "conceptos-basicos/colaboracion/comentarios",
-          ],
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "⚙️ Configuración Avanzada",
-      collapsible: true,
-      collapsed: true,
-      items: [
-        "configuracion-avanzada/integraciones",
-        "configuracion-avanzada/personalizacion",
-        "configuracion-avanzada/migracion",
-      ],
-    },
-    {
-      type: "category",
-      label: "🔧 Soporte Técnico",
-      collapsible: true,
-      collapsed: true,
-      items: [
-        "soporte/preguntas-frecuentes",
-        "soporte/solucion-problemas",
-        "soporte/contacto",
-      ],
-    },
+  tutorialSidebar: [
     {
       type: "doc",
-      label: "📄 Changelog",
-      id: "changelog",
+      id: "intro",
+      label: "🏠 Introducción",
+    },
+    {
+      type: "category",
+      label: "📚 Tutorial Básico",
+      collapsible: false,
+      items: [
+        "tutorial-basics/create-a-document",
+        "tutorial-basics/create-a-page",
+        "tutorial-basics/create-a-blog-post",
+        "tutorial-basics/markdown-features",
+        "tutorial-basics/deploy-your-site",
+        "tutorial-basics/congratulations"
+      ],
+    },
+    {
+      type: "category",
+      label: "⚙️ Temas Avanzados",
+      items: [
+        "tutorial-extras/manage-docs-versions",
+        "tutorial-extras/translate-your-site"
+      ],
     },
   ],
 };
