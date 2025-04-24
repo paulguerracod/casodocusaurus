@@ -7,7 +7,7 @@ const isGitHub = process.env.DEPLOY_TARGET === "gh-pages";
 const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/facturacion.png',
 
   url: isGitHub 
     ? 'https://paulguerracod.github.io'
@@ -54,10 +54,7 @@ const config = {
     },
     navbar: {
       title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+
       items: [
         {
           type: 'doc',

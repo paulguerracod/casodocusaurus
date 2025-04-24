@@ -1,11 +1,9 @@
 ---
-title: Markdown page example
+title: Página con Imagen
 ---
 
-# Markdown page example
+# Página con Imagen
 
-You don't need React to write simple standalone pages.
+Aquí se muestra una imagen:
 
-![Logo](/static/img/facturacion.png)
-
-Esta es una imagen cargada desde la carpeta `static/img/`.
+![Facturación](/img/facturacion.png)
