@@ -43,4 +43,4 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 # Github Pages
 
-clic here: [https://paulguerracod.github.io/docusaurus](https://paulguerracod.github.io/docusaurus).
+Clic here: [https://paulguerracod.github.io/casodocusaurus/](https://paulguerracod.github.io/casodocusaurus/).
