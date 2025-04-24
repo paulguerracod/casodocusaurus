@@ -1,17 +1,15 @@
-import Tabs from "@theme/Tabs";
-import TabItem from "@theme/TabItem";
+import React from 'react';
+import clsx from 'clsx';
 
-export default function GitBookTabs({ items }) {
+export default function GitBookCard({ title, children, className }) {
   return (
-    <Tabs
-      className="gitbook-tabs"
-      defaultValue={items[0].value}
-      values={items}>
-      {items.map((item, idx) => (
-        <TabItem key={idx} value={item.value}>
-          {item.content}
-        </TabItem>
-      ))}
-    </Tabs>
+    <div className={clsx('card', className)}>
+      <div className="card__header">
+        <h3>{title}</h3>
+      </div>
+      <div className="card__body">
+        {children}
+      </div>
+    </div>
   );
 }
