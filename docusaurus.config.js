@@ -9,7 +9,7 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/facturacion.png',
 
-  url: 'https://misitioweb.com',
+  url: 'https://paulguerracod.github.io',
   baseUrl: '/docusaurus/',
 
   organizationName: 'paulguerracod',

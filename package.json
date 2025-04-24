@@ -2,10 +2,13 @@
   "name": "my-website",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
+  
+  "homepage": "https://paulguerracod.github.io/docusaurus",
+    "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "predeploy": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
