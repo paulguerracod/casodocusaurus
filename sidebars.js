@@ -9,23 +9,34 @@ const sidebars = {
       type: "doc",
       id: "intro",
       label: "🏠 Introducción",
+      className: 'menu-item-icon', // Para íconos personalizados
     },
     {
       type: "category",
-      label: "📚 Tutorial Básico",
+      label: "📚 Guías Prácticas",
       collapsible: false,
       items: [
-        "tutorial-basics/create-a-document",
-        "tutorial-basics/create-a-page",
-        "tutorial-basics/create-a-blog-post",
-        "tutorial-basics/markdown-features",
-        "tutorial-basics/deploy-your-site",
-        "tutorial-basics/congratulations"
+        {
+          type: "doc",
+          id: "tutorial-basics/create-a-document",
+          label: "Crear Documentación",
+        },
+        {
+          type: "doc",
+          id: "tutorial-basics/create-a-page",
+          label: "Crear Páginas",
+        },
+        {
+          type: "doc",
+          id: "tutorial-basics/deploy-your-site",
+          label: "Despliegue",
+        },
       ],
+      className: 'menu-category-gitbook',
     },
     {
       type: "category",
-      label: "⚙️ Temas Avanzados",
+      label: "⚙️ Configuración",
       items: [
         "tutorial-extras/manage-docs-versions",
         "tutorial-extras/translate-your-site"
