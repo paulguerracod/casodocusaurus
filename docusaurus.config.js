@@ -51,22 +51,23 @@ const config = {
       },
       image: 'img/social-card.jpg',
       navbar: {
-        title: 'Facturalo Docs',
+        title: '',
         logo: {
           alt: 'Facturalo Logo',
           src: 'img/logo.svg',
           width: 160,
-          height: 32,
+          height: 40,
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
+            type: 'doc',
+            docId: 'intro',
+            position: 'right',
             label: 'Documentación',
           },
           {
-            type: 'search',
+            href: 'https://app.facturalo.co',
+            label: 'Iniciar Sesión',
             position: 'right',
           },
         ],

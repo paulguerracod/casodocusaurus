@@ -1,22 +1,34 @@
-/* Fuente principal - Debe ser la primera regla */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import '~@fontsource/inter/400.css';
+@import '~@fontsource/inter/600.css';
+@import '~@fontsource/inter/700.css';
 
 :root {
-  --ifm-color-primary: #3B49DF; /* Azul GitBook */
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
-  --ifm-heading-font-weight: 600;
-  --ifm-line-height-base: 1.6;
+  --ifm-color-primary: #3B49DF;
+  --ifm-font-family-base: 'Inter', system-ui, sans-serif;
 }
-
 /* Navbar estilo GitBook */
 .navbar {
-  border-bottom: 1px solid #eaecef;
-  box-shadow: none;
-  padding: 12px 0;
+  background: white !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 80px;
 }
 
 .navbar__logo {
-  margin-right: 2rem;
+  height: 40px;
+}
+
+.navbar__items {
+  gap: 1.5rem;
+}
+
+.navbar__link {
+  font-weight: 500;
+  color: #1a1a1a !important;
+  transition: all 0.2s;
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary) !important;
 }
 
 /* Sidebar estilo GitBook */
@@ -30,6 +42,12 @@
   padding: 8px 12px;
   font-size: 14px;
   transition: all 0.2s;
+}
+
+/* Footer minimalista */
+.footer {
+  background: #f8f9fa;
+  border-top: 1px solid #eaecef;
 }
 
 .menu__link:hover {

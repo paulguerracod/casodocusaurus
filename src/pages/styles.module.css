@@ -1,0 +1,85 @@
+/* Estilos del héroe */
+.hero {
+  background: linear-gradient(135deg, #3B49DF 0%, #2F3CC2 100%);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.heroContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+/* Botones */
+.ctnButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primaryButton {
+  background: white;
+  color: #3B49DF !important;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.secondaryButton {
+  border: 2px solid white;
+  color: white !important;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Sección de características */
+.features {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.featureCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+}
+
+.featureCard h3 {
+  color: #3B49DF;
+  margin-bottom: 1rem;
+}

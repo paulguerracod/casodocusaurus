@@ -1,43 +1,39 @@
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import React from 'react';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
-import Heading from '@theme/Heading';
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+import styles from './styles.module.css';
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+    <Layout>
+      <div className={styles.hero}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.title}>Bienvenido a Facturalo</h1>
+          <p className={styles.subtitle}>Sistema Integral de Facturación Electrónica</p>
+          <div className={styles.ctnButtons}>
+            <a href="/docs/intro" className={styles.primaryButton}>
+              Comenzar
+            </a>
+            <a href="/docs/funcionalidades" className={styles.secondaryButton}>
+              Ver Funcionalidades
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <section className={styles.features}>
+        <div className={styles.featureCard}>
+          <h3>⚡ Facturación Rápida</h3>
+          <p>Emite comprobantes electrónicos en segundos</p>
+        </div>
+        <div className={styles.featureCard}>
+          <h3>📈 Reportes Avanzados</h3>
+          <p>Genera análisis financieros detallados</p>
+        </div>
+        <div className={styles.featureCard}>
+          <h3>🔒 Seguridad Garantizada</h3>
+          <p>Cifrado de última generación</p>
+        </div>
+      </section>
     </Layout>
   );
 }
