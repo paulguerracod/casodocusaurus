@@ -7,7 +7,7 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: "doc",
-      id: "intro",
+      id: "docs/intro",
       label: "🏠 Introducción",
       className: 'menu-item-icon', // Para íconos personalizados
     },
