@@ -6,4 +6,4 @@ title: Página con Imagen
 
 Aquí se muestra una imagen:
 
-![Facturación](/img/facturacion.png)
+![Facturación](https://cdn-icons-png.flaticon.com/128/4166/4166029.png)
